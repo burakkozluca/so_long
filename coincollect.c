@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   coincollect.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: burakkozluca <burakkozluca@student.42.f    +#+  +:+       +#+        */
+/*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 08:47:33 by burakkozluc       #+#    #+#             */
-/*   Updated: 2022/11/03 09:11:56 by burakkozluc      ###   ########.fr       */
+/*   Updated: 2022/12/05 13:53:18 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

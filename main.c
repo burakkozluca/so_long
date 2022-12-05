@@ -6,7 +6,7 @@
 /*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 16:34:36 by bkozluca          #+#    #+#             */
-/*   Updated: 2022/12/05 13:31:43 by bkozluca         ###   ########.fr       */
+/*   Updated: 2022/12/05 14:37:27 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,6 @@ void	map_print(t_img *so_long)
 	close(fd);
 }
 
-void	mapfilecontrol(t_img *so_long)
-{
-	int	fd;
-
-	fd = open(so_long->map_input[1], O_RDONLY);
-	if (fd <= 0)
-	{
-		write(1, "Olmayan harita", 14);
-		exit(0);
-	}
-}
-
 int	closescreen(t_img *so_long)
 {
 	write(1, "Oyun kapatildi", 14);
@@ -67,12 +55,11 @@ int	main(int argc, char **map_input)
 	arg_control(img);
 	definevariable(img);
 	mlx_win = mlx_new_window(mlx, column_len(img) * 32,
-			line_len(img) * 32, "so_long");
+			line_len(img) * 32, "burakkozluca");
 	img->mlx_win = mlx_win;
 	map_print(img);
 	xpm(img);
 	allfunc(img);
-	pathfind(img);
 	counter_coin(img);
 	mlx_hook(img->mlx_win, 17, 1L << 0, closescreen, &img->mlx);
 	mlx_hook(img->mlx_win, 2, 1L << 0, buttons, &img->mlx);

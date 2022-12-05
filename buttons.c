@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   buttons.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: burakkozluca <burakkozluca@student.42.f    +#+  +:+       +#+        */
+/*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 08:48:39 by burakkozluc       #+#    #+#             */
-/*   Updated: 2022/11/04 22:43:23 by burakkozluc      ###   ########.fr       */
+/*   Updated: 2022/12/05 14:31:50 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	turnup(t_img *so_long);
 void	turndown(t_img *so_long);
 void	turnright(t_img *so_long);
 
-int buttons(int keycode, t_img *so_long)
+int	buttons(int keycode, t_img *so_long)
 {
 	if (keycode == 53)
 	{

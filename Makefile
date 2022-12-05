@@ -1,4 +1,4 @@
-NAME = mlx.a
+NAME = so_long.a
 SRC = $(wildcard *.c)
 CC = gcc
 CFLAGS = ft_printf/libftprintf.a get_next_line/get_next_line.c get_next_line/get_next_line_utils.c -Lmlx -lmlx -framework OpenGL -framework AppKit

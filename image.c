@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   image.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: burakkozluca <burakkozluca@student.42.f    +#+  +:+       +#+        */
+/*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 08:51:33 by burakkozluc       #+#    #+#             */
-/*   Updated: 2022/11/03 09:04:28 by burakkozluc      ###   ########.fr       */
+/*   Updated: 2022/12/05 14:32:33 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	addimage(t_img *so_long)
 			"./xpm/background.xpm", so_long->w, so_long->h);
 }
 
-void    xpm(t_img *so_long)
+void	xpm(t_img *so_long)
 {
 	int	x;
 	int	y;

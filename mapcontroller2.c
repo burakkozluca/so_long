@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mapcontroller2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: burakkozluca <burakkozluca@student.42.f    +#+  +:+       +#+        */
+/*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 08:48:45 by burakkozluc       #+#    #+#             */
-/*   Updated: 2022/11/29 09:49:40 by burakkozluc      ###   ########.fr       */
+/*   Updated: 2022/12/05 14:39:52 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,18 @@ void	iscollectible(t_img *so_long)
 	}
 }
 
+void	mapfilecontrol(t_img *so_long)
+{
+	int	fd;
+
+	fd = open(so_long->map_input[1], O_RDONLY);
+	if (fd <= 0)
+	{
+		write(1, "Olmayan harita", 14);
+		exit(0);
+	}
+}
+
 void	allfunc(t_img *so_long)
 {
 	isrectangular(so_long);
@@ -46,4 +58,5 @@ void	allfunc(t_img *so_long)
 	arg_control(so_long);
 	isduplicate(so_long);
 	iscollectible(so_long);
+	pathfind(so_long);
 }
