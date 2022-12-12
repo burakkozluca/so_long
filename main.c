@@ -6,7 +6,7 @@
 /*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/19 16:34:36 by bkozluca          #+#    #+#             */
-/*   Updated: 2022/12/05 14:37:27 by bkozluca         ###   ########.fr       */
+/*   Updated: 2022/12/08 22:28:02 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	main(int argc, char **map_input)
 	arg_control(img);
 	definevariable(img);
 	mlx_win = mlx_new_window(mlx, column_len(img) * 32,
-			line_len(img) * 32, "burakkozluca");
+			line_len(img) * 32, "so_long");
 	img->mlx_win = mlx_win;
 	map_print(img);
 	xpm(img);

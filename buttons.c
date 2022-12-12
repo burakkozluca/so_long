@@ -6,16 +6,11 @@
 /*   By: bkozluca <bkozluca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 08:48:39 by burakkozluc       #+#    #+#             */
-/*   Updated: 2022/12/05 14:31:50 by bkozluca         ###   ########.fr       */
+/*   Updated: 2022/12/08 21:15:21 by bkozluca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
-
-void	turnleft(t_img *so_long);
-void	turnup(t_img *so_long);
-void	turndown(t_img *so_long);
-void	turnright(t_img *so_long);
 
 int	buttons(int keycode, t_img *so_long)
 {
